@@ -23,6 +23,7 @@ namespace Service
         FileSystemWatcher fileSystemWatcher;
         string path = @"..\..\";
         string fileName = "Log.txt";
+        ProcessStartInfo processStartInfo;
         
         public Service1()
         {
@@ -40,7 +41,7 @@ namespace Service
 
         private void FileSystemWatcher_Deleted(object sender, FileSystemEventArgs e)
         {
-            string filepath = path + fileName;
+            string filepath = path + fileName;            
             StringBuilder stringBuilder = new StringBuilder();
             dateTime = DateTime.UtcNow;
             stringBuilder.Append(dateTime.ToString());

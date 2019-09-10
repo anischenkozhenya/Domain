@@ -1,0 +1,32 @@
+﻿Выполняется установка сборки 'C:\Users\Anischenko\Source\Repos\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Anischenko\Source\Repos\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = C:\Users\Anischenko\Source\Repos\Domain\DomainService\Service\obj\Debug\Service.exe
+Отсутствуют общие программы установки с атрибутом RunInstallerAttribute.Yes в сборке C:\Users\Anischenko\Source\Repos\Domain\DomainService\Service\obj\Debug\Service.exe.
+Выполняется фиксация сборки 'C:\Users\Anischenko\Source\Repos\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Anischenko\Source\Repos\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = C:\Users\Anischenko\Source\Repos\Domain\DomainService\Service\obj\Debug\Service.exe
+Отсутствуют общие программы установки с атрибутом RunInstallerAttribute.Yes в сборке C:\Users\Anischenko\Source\Repos\Domain\DomainService\Service\obj\Debug\Service.exe.
+Удалите файл InstallState, поскольку отсутствуют программы установки.
+Выполняется удаление сборки 'C:\Users\Anischenko\Source\Repos\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Anischenko\Source\Repos\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = C:\Users\Anischenko\Source\Repos\Domain\DomainService\Service\obj\Debug\Service.exe
+Отсутствуют общие программы установки с атрибутом RunInstallerAttribute.Yes в сборке C:\Users\Anischenko\Source\Repos\Domain\DomainService\Service\obj\Debug\Service.exe.
+Выполняется установка сборки 'C:\Users\Anischenko\source\repos\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Anischenko\source\repos\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = C:\Users\Anischenko\source\repos\Domain\DomainService\Service\obj\Debug\Service.exe
+Отсутствуют общие программы установки с атрибутом RunInstallerAttribute.Yes в сборке C:\Users\Anischenko\source\repos\Domain\DomainService\Service\obj\Debug\Service.exe.
+Выполняется фиксация сборки 'C:\Users\Anischenko\source\repos\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\Anischenko\source\repos\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = C:\Users\Anischenko\source\repos\Domain\DomainService\Service\obj\Debug\Service.exe
+Отсутствуют общие программы установки с атрибутом RunInstallerAttribute.Yes в сборке C:\Users\Anischenko\source\repos\Domain\DomainService\Service\obj\Debug\Service.exe.
+Удалите файл InstallState, поскольку отсутствуют программы установки.

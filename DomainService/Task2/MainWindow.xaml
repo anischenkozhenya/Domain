@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Task2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="4" Margin="15" x:Name="textBox"></TextBox>
+        <Button x:Name="installBtn" Content="Установить службу" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="10" Click="InstallBtn_Click" ></Button>
+        <Button x:Name="startServiceBtn" Content="Запустить службу" Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="2" Margin="10" Click="StartServiceBtn_Click" ></Button>
+        <Button x:Name="uninstallBtn" Content="Удалить службу" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Margin="10" Click="UninstallBtn_Click" ></Button>
+        <Button x:Name="stopServiceBtn" Content="Остановить службу" Grid.Row="4"  Grid.Column="2" Grid.ColumnSpan="2" Margin="10" Click="StopServiceBtn_Click" ></Button>
     </Grid>
 </Window>
