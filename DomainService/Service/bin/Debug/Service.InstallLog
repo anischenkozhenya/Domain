@@ -1,0 +1,13 @@
+﻿Выполняется установка сборки 'E:\Domain\Domain\DomainService\Service\bin\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\bin\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\bin\Debug\Service.exe
+Отсутствуют общие программы установки с атрибутом RunInstallerAttribute.Yes в сборке E:\Domain\Domain\DomainService\Service\bin\Debug\Service.exe.
+Выполняется фиксация сборки 'E:\Domain\Domain\DomainService\Service\bin\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\bin\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\bin\Debug\Service.exe
+Отсутствуют общие программы установки с атрибутом RunInstallerAttribute.Yes в сборке E:\Domain\Domain\DomainService\Service\bin\Debug\Service.exe.
+Удалите файл InstallState, поскольку отсутствуют программы установки.

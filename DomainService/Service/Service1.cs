@@ -21,26 +21,29 @@ namespace Service
         DateTime dateTime;
         DriveInfo[] drives = DriveInfo.GetDrives();
         FileSystemWatcher fileSystemWatcher;
-        string path = @"..\..\";
+        string path = @"D:\";
         string fileName = "Log.txt";
+        
         
         public Service1()
         {
             InitializeComponent();
+            //for (int i = 0; i < drives.Length; i++)
+            //{
+                fileSystemWatcher = new FileSystemWatcher(path);
+                fileSystemWatcher.Deleted += FileSystemWatcher_Deleted;
+            //}
         }
 
         protected override void OnStart(string[] args)
-        {            
-            for (int i = 0; i < drives.Length; i++)
-            {
-                fileSystemWatcher = new FileSystemWatcher(drives[i].Name.ToString());
-                fileSystemWatcher.Deleted += FileSystemWatcher_Deleted;
-            }
+        {
+            fileSystemWatcher.EnableRaisingEvents = true;
+            
         }
 
         private void FileSystemWatcher_Deleted(object sender, FileSystemEventArgs e)
         {
-            string filepath = path + fileName;
+            string filepath = path + fileName;            
             StringBuilder stringBuilder = new StringBuilder();
             dateTime = DateTime.UtcNow;
             stringBuilder.Append(dateTime.ToString());
@@ -50,6 +53,7 @@ namespace Service
 
         protected override void OnStop()
         {
+            fileSystemWatcher.EnableRaisingEvents = false;
         }
     }
 }
