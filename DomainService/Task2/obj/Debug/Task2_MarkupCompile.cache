@@ -4,12 +4,20 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 E:\Domain\Domain\DomainService\Task2\obj\Debug\
+=======
+C:\Users\Anischenko\Source\Repos\Domain\DomainService\Task2\obj\Debug\
+>>>>>>> 6d4616fa95c7f495ccbe2970f8d92aff1483c854
 Task2
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 E:\Domain\Domain\DomainService\Task2\App.xaml
+=======
+C:\Users\Anischenko\Source\Repos\Domain\DomainService\Task2\App.xaml
+>>>>>>> 6d4616fa95c7f495ccbe2970f8d92aff1483c854
 11151548125
 
 5-2017746502

@@ -30,6 +30,7 @@
    assemblypath = C:\Users\Anischenko\source\repos\Domain\DomainService\Service\obj\Debug\Service.exe
 Отсутствуют общие программы установки с атрибутом RunInstallerAttribute.Yes в сборке C:\Users\Anischenko\source\repos\Domain\DomainService\Service\obj\Debug\Service.exe.
 Удалите файл InstallState, поскольку отсутствуют программы установки.
+<<<<<<< HEAD
 Выполняется установка сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
 Затронуты следующие параметры:
    logtoconsole = 
@@ -173,3 +174,5 @@
 Выполняется удаление службы =MyService= из системы...
 Служба =MyService= успешно удалена из системы.
 Попытка останова службы =MyService=.
+=======
+>>>>>>> 6d4616fa95c7f495ccbe2970f8d92aff1483c854

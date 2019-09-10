@@ -23,6 +23,7 @@ namespace Service
         FileSystemWatcher fileSystemWatcher;
         string path = @"D:\";
         string fileName = "Log.txt";
+        ProcessStartInfo processStartInfo;
         
         
         public Service1()
