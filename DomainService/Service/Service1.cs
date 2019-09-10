@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.ServiceProcess;
 using System.Text;
-using System.Threading.Tasks;
 //Создайте службу Windows, которая будет мониторить жесткие диски и при удалении из этих
 //дисков файла записывать информацию(полный путь) в текстовый файл.
 //Создайте WPF приложение.Разместите в нем TextBox, в который с определенной

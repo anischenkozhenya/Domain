@@ -176,3 +176,24 @@
 Попытка останова службы =MyService=.
 =======
 >>>>>>> 6d4616fa95c7f495ccbe2970f8d92aff1483c854
+Выполняется установка сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Устанавливается служба =MyService=...
+Служба =MyService= успешно установлена.
+Создается исходный EventLog =MyService= в журнале Application...
+Выполняется фиксация сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление источника EventLog =MyService=.
+Выполняется удаление службы =MyService= из системы...
+Служба =MyService= успешно удалена из системы.
