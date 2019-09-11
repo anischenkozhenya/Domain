@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration.Install;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.ServiceProcess;
 using System.Text;
@@ -27,15 +28,33 @@ namespace Task2
     public partial class MainWindow : Window
     {
 
-        
+
         private ServiceController controller;
         private string servicePath = @"..\..\..\Service\obj\Debug\Service.exe";
-
-
+        DispatcherTimer timer = new DispatcherTimer();
+        string logfile = @"D:\Log.txt";        
         public MainWindow()
         {
             InitializeComponent();
-        }        
+            timer.Tick += Timer_Tick;
+            timer.Interval = new TimeSpan(0,0,5);
+            timer.Start();
+            
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            textBox.Text = File.ReadAllText(logfile);
+        }
+
+        private async Task<string> ShowLogFile()
+        {
+            await Task<string>.Run(()=> {
+                string result = File.ReadAllText(logfile);
+                return result;
+            });
+            return null;
+        }
 
         private void InstallBtn_Click(object sender, RoutedEventArgs e)
         {
