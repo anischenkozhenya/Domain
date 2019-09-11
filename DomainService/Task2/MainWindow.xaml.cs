@@ -1,39 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration.Install;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.ServiceProcess;
-using System.Text;
-using System.Threading.Tasks;
-using System.Timers;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Windows.Threading;
-
-
 namespace Task2
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window,IDisposable
-    {  
+    {
         private ServiceController controller;
-        private string servicePath = @"..\..\..\Service\obj\Debug\Service.exe";
-        DispatcherTimer timer = new DispatcherTimer();
-        string logfile = @"D:\Log.txt";        
+        private readonly string servicePath = @"..\..\..\Service\obj\Debug\Service.exe";
+        readonly DispatcherTimer timer = new DispatcherTimer();
+        readonly string logfile = @"D:\Log.txt";        
         public MainWindow()
         {
             InitializeComponent();
+            if (!File.Exists(logfile))
+            {
+                File.CreateText(logfile).Close();
+            }
             timer.Tick += Timer_Tick;
             timer.Interval = new TimeSpan(0,0,1);
             timer.Start();
@@ -43,6 +31,7 @@ namespace Task2
         private void Timer_Tick(object sender, EventArgs e)
         {
             textBox.Text = File.ReadAllText(logfile);
+            Scrlwvr.ScrollToEnd();
         }
                
 
@@ -56,16 +45,20 @@ namespace Task2
 
         private void StartServiceBtn_Click(object sender, RoutedEventArgs e)
         {
-            controller = new ServiceController();
-            controller.ServiceName = "=MyService=";
+            controller = new ServiceController
+            {
+                ServiceName = "=MyService="
+            };
             controller.Start();
             MessageBox.Show("Служба запущена");
         }
 
         private void StopServiceBtn_Click(object sender, RoutedEventArgs e)
         {
-            controller = new ServiceController();
-            controller.ServiceName = "=MyService=";
+            controller = new ServiceController
+            {
+                ServiceName = "=MyService="
+            };
             controller.Stop();
             MessageBox.Show("Служба остановлена");
         }
@@ -80,6 +73,7 @@ namespace Task2
         public void Dispose()
         {
             timer.Stop();
+            controller.Close();
         }
     }
 }
