@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.IO;
 using System.ServiceProcess;
 using System.Text;
@@ -14,24 +13,27 @@ namespace Service
     public partial class Service1 : ServiceBase
     {
         DateTime dateTime;
-        readonly DriveInfo[] drives = DriveInfo.GetDrives();
-        FileSystemWatcher fileSystemWatcher;
+        private readonly FileSystemWatcher[] fileSystemWatcher;
         readonly string path = @"D:\";
         readonly string fileName = "Log.txt";
         public Service1()
         {
             InitializeComponent();
-            //for (int i = 0; i < drives.Length; i++)
-            //{
-                fileSystemWatcher = new FileSystemWatcher(path);
-                fileSystemWatcher.Deleted += FileSystemWatcher_Deleted;
-            //}
+            string[] drive = Environment.GetLogicalDrives();
+            for (int i = 0; i < drive.Length-1; i++)
+            {
+                fileSystemWatcher[i] = new FileSystemWatcher(drive[i]);
+                fileSystemWatcher[i].IncludeSubdirectories = true;
+                fileSystemWatcher[i].Deleted += FileSystemWatcher_Deleted;
+            }    
         }
 
         protected override void OnStart(string[] args)
         {
-            fileSystemWatcher.EnableRaisingEvents = true;
-            
+            foreach (var item in fileSystemWatcher)
+            {
+                item.EnableRaisingEvents = true;
+            }
         }
 
         private void FileSystemWatcher_Deleted(object sender, FileSystemEventArgs e)
@@ -46,7 +48,10 @@ namespace Service
 
         protected override void OnStop()
         {
-            fileSystemWatcher.EnableRaisingEvents = false;
+            foreach (var item in fileSystemWatcher)
+            {
+                item.EnableRaisingEvents = false;
+            }                 
         }
     }
 }

@@ -250,3 +250,261 @@
 При выполнении программы установки System.ServiceProcess.ServiceInstaller во время установки возникло исключение.
 System.ComponentModel.Win32Exception: Указанная служба не установлена
 При удалении из системы возникло исключение. Это исключение будет проигнорировано, и удаление из системы будет продолжено. Однако после завершения удаления данное приложение может оказаться не полностью удаленным.
+Выполняется установка сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Устанавливается служба =MyService=...
+Служба =MyService= успешно установлена.
+Создается исходный EventLog =MyService= в журнале Application...
+Выполняется фиксация сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление источника EventLog =MyService=.
+Выполняется удаление службы =MyService= из системы...
+Служба =MyService= успешно удалена из системы.
+Выполняется установка сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Устанавливается служба =MyService=...
+Служба =MyService= успешно установлена.
+Создается исходный EventLog =MyService= в журнале Application...
+Выполняется фиксация сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление источника EventLog =MyService=.
+Выполняется удаление службы =MyService= из системы...
+Служба =MyService= успешно удалена из системы.
+Выполняется установка сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Устанавливается служба =MyService=...
+Служба =MyService= успешно установлена.
+Создается исходный EventLog =MyService= в журнале Application...
+Выполняется фиксация сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление источника EventLog =MyService=.
+Выполняется удаление службы =MyService= из системы...
+Служба =MyService= успешно удалена из системы.
+Выполняется установка сборки 'e:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = e:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = e:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Устанавливается служба =MyService=...
+Служба =MyService= успешно установлена.
+Создается исходный EventLog =MyService= в журнале Application...
+Выполняется фиксация сборки 'e:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = e:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = e:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление сборки 'e:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = e:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = e:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление источника EventLog =MyService=.
+Выполняется удаление службы =MyService= из системы...
+Служба =MyService= успешно удалена из системы.
+Выполняется установка сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Устанавливается служба =MyService=...
+Служба =MyService= успешно установлена.
+Создается исходный EventLog =MyService= в журнале Application...
+Выполняется фиксация сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление источника EventLog =MyService=.
+Выполняется удаление службы =MyService= из системы...
+Служба =MyService= успешно удалена из системы.
+Выполняется установка сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Устанавливается служба =MyService=...
+Служба =MyService= успешно установлена.
+Создается исходный EventLog =MyService= в журнале Application...
+Выполняется фиксация сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление источника EventLog =MyService=.
+Выполняется удаление службы =MyService= из системы...
+Служба =MyService= успешно удалена из системы.
+Выполняется установка сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Устанавливается служба =MyService=...
+Служба =MyService= успешно установлена.
+Создается исходный EventLog =MyService= в журнале Application...
+Выполняется фиксация сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется установка сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Устанавливается служба =MyService=...
+Создается исходный EventLog =MyService= в журнале Application...
+Выполняется откат для сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Восстанавливается исходное состояние журнала событий для источника =MyService=.
+Выполняется удаление сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление источника EventLog =MyService=.
+Выполняется удаление службы =MyService= из системы...
+Служба =MyService= успешно удалена из системы.
+Выполняется установка сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Устанавливается служба =MyService=...
+Служба =MyService= успешно установлена.
+Создается исходный EventLog =MyService= в журнале Application...
+Выполняется фиксация сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление источника EventLog =MyService=.
+Выполняется удаление службы =MyService= из системы...
+Служба =MyService= успешно удалена из системы.
+Выполняется установка сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Устанавливается служба =MyService=...
+Служба =MyService= успешно установлена.
+Создается исходный EventLog =MyService= в журнале Application...
+Выполняется фиксация сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется установка сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Устанавливается служба =MyService=...
+Создается исходный EventLog =MyService= в журнале Application...
+Выполняется откат для сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Восстанавливается исходное состояние журнала событий для источника =MyService=.
+Выполняется удаление сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление источника EventLog =MyService=.
+Выполняется удаление службы =MyService= из системы...
+Служба =MyService= успешно удалена из системы.
+Попытка останова службы =MyService=.
+Выполняется установка сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Устанавливается служба =MyService=...
+Служба =MyService= успешно установлена.
+Создается исходный EventLog =MyService= в журнале Application...
+Выполняется фиксация сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление источника EventLog =MyService=.
+Выполняется удаление службы =MyService= из системы...
+Служба =MyService= успешно удалена из системы.
+Выполняется установка сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Устанавливается служба =MyService=...
+Служба =MyService= успешно установлена.
+Создается исходный EventLog =MyService= в журнале Application...
+Выполняется фиксация сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление источника EventLog =MyService=.
+Выполняется удаление службы =MyService= из системы...
+Служба =MyService= успешно удалена из системы.
