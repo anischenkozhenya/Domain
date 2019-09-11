@@ -218,3 +218,35 @@
 Выполняется удаление источника EventLog =MyService=.
 Выполняется удаление службы =MyService= из системы...
 Служба =MyService= успешно удалена из системы.
+Выполняется установка сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Устанавливается служба =MyService=...
+Служба =MyService= успешно установлена.
+Создается исходный EventLog =MyService= в журнале Application...
+Выполняется фиксация сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление источника EventLog =MyService=.
+Выполняется удаление службы =MyService= из системы...
+Служба =MyService= успешно удалена из системы.
+Выполняется удаление сборки 'E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.InstallLog
+   assemblypath = E:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
+Выполняется удаление источника EventLog =MyService=.
+Предупреждение. Источник =MyService= не зарегистрирован на локальном компьютере.
+Выполняется удаление службы =MyService= из системы...
+При выполнении программы установки System.ServiceProcess.ServiceInstaller во время установки возникло исключение.
+System.ComponentModel.Win32Exception: Указанная служба не установлена
+При удалении из системы возникло исключение. Это исключение будет проигнорировано, и удаление из системы будет продолжено. Однако после завершения удаления данное приложение может оказаться не полностью удаленным.

@@ -14,13 +14,10 @@ namespace Service
     public partial class Service1 : ServiceBase
     {
         DateTime dateTime;
-        DriveInfo[] drives = DriveInfo.GetDrives();
+        readonly DriveInfo[] drives = DriveInfo.GetDrives();
         FileSystemWatcher fileSystemWatcher;
-        string path = @"D:\";
-        string fileName = "Log.txt";
-        ProcessStartInfo processStartInfo;
-        
-        
+        readonly string path = @"D:\";
+        readonly string fileName = "Log.txt";
         public Service1()
         {
             InitializeComponent();
@@ -43,7 +40,7 @@ namespace Service
             StringBuilder stringBuilder = new StringBuilder();
             dateTime = DateTime.UtcNow;
             stringBuilder.Append(dateTime.ToString());
-            stringBuilder.Append(e.FullPath + " был удален!");
+            stringBuilder.Append(e.FullPath + " был удален!\n");
             File.AppendAllText(filepath,stringBuilder.ToString());
         }
 

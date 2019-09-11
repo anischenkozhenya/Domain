@@ -25,10 +25,8 @@ namespace Task2
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
-    {
-
-
+    public partial class MainWindow : Window,IDisposable
+    {  
         private ServiceController controller;
         private string servicePath = @"..\..\..\Service\obj\Debug\Service.exe";
         DispatcherTimer timer = new DispatcherTimer();
@@ -37,7 +35,7 @@ namespace Task2
         {
             InitializeComponent();
             timer.Tick += Timer_Tick;
-            timer.Interval = new TimeSpan(0,0,5);
+            timer.Interval = new TimeSpan(0,0,1);
             timer.Start();
             
         }
@@ -46,15 +44,7 @@ namespace Task2
         {
             textBox.Text = File.ReadAllText(logfile);
         }
-
-        private async Task<string> ShowLogFile()
-        {
-            await Task<string>.Run(()=> {
-                string result = File.ReadAllText(logfile);
-                return result;
-            });
-            return null;
-        }
+               
 
         private void InstallBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -85,6 +75,11 @@ namespace Task2
             ManagedInstallerClass.InstallHelper(new string[] { @"/u",servicePath});
             MessageBox.Show("Служба удалена");
             
+        }
+
+        public void Dispose()
+        {
+            timer.Stop();
         }
     }
 }
