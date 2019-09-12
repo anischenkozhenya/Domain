@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.ServiceProcess;
 using System.Text;
@@ -13,18 +14,20 @@ namespace Service
     public partial class Service1 : ServiceBase
     {
         DateTime dateTime;
-        private readonly FileSystemWatcher[] fileSystemWatcher;
+        static private FileSystemWatcher[] fileSystemWatcher;
         readonly string path = @"D:\";
         readonly string fileName = "Log.txt";
+        private string userName;
         public Service1()
         {
             InitializeComponent();
             string[] drive = Environment.GetLogicalDrives();
-            for (int i = 0; i < drive.Length-1; i++)
+            fileSystemWatcher = new FileSystemWatcher[drive.Length]; 
+            for (int i = 0; i < drive.Length; i++)
             {
-                fileSystemWatcher[i] = new FileSystemWatcher(drive[i]);
-                fileSystemWatcher[i].IncludeSubdirectories = true;
-                fileSystemWatcher[i].Deleted += FileSystemWatcher_Deleted;
+            fileSystemWatcher[i] = new FileSystemWatcher(drive[i]);
+            fileSystemWatcher[i].IncludeSubdirectories = true;
+            fileSystemWatcher[i].Deleted += FileSystemWatcher_Deleted;
             }    
         }
 
@@ -33,16 +36,18 @@ namespace Service
             foreach (var item in fileSystemWatcher)
             {
                 item.EnableRaisingEvents = true;
-            }
+            }           
         }
 
         private void FileSystemWatcher_Deleted(object sender, FileSystemEventArgs e)
         {
-            string filepath = path + fileName;            
+            string filepath = path + fileName;
+            userName = null;
+            userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
             StringBuilder stringBuilder = new StringBuilder();
             dateTime = DateTime.UtcNow;
             stringBuilder.Append(dateTime.ToString());
-            stringBuilder.Append(e.FullPath + " был удален!\n");
+            stringBuilder.Append(" "+ userName + " "+e.FullPath + " был удален!\n");
             File.AppendAllText(filepath,stringBuilder.ToString());
         }
 
@@ -51,7 +56,7 @@ namespace Service
             foreach (var item in fileSystemWatcher)
             {
                 item.EnableRaisingEvents = false;
-            }                 
+            }            
         }
     }
 }

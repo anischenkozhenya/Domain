@@ -1,7 +1,6 @@
 e:\Domain\Domain\DomainService\Service\bin\Debug\Service.exe.config
 e:\Domain\Domain\DomainService\Service\bin\Debug\Service.exe
 e:\Domain\Domain\DomainService\Service\bin\Debug\Service.pdb
-e:\Domain\Domain\DomainService\Service\obj\Debug\Service.csprojAssemblyReference.cache
 e:\Domain\Domain\DomainService\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
 e:\Domain\Domain\DomainService\Service\obj\Debug\Service.exe
 e:\Domain\Domain\DomainService\Service\obj\Debug\Service.pdb
@@ -12,3 +11,4 @@ C:\Users\Anischenko\Source\Repos\Domain\DomainService\Service\obj\Debug\Service.
 C:\Users\Anischenko\Source\Repos\Domain\DomainService\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
 C:\Users\Anischenko\Source\Repos\Domain\DomainService\Service\obj\Debug\Service.exe
 C:\Users\Anischenko\Source\Repos\Domain\DomainService\Service\obj\Debug\Service.pdb
+E:\Domain\Domain\DomainService\Service\obj\Debug\Service.csprojAssemblyReference.cache

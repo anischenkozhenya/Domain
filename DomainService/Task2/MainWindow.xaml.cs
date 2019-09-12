@@ -9,12 +9,12 @@ namespace Task2
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window,IDisposable
+    public partial class MainWindow : Window, IDisposable
     {
         private ServiceController controller;
         private readonly string servicePath = @"..\..\..\Service\obj\Debug\Service.exe";
         readonly DispatcherTimer timer = new DispatcherTimer();
-        readonly string logfile = @"D:\Log.txt";        
+        readonly string logfile = @"D:\Log.txt";
         public MainWindow()
         {
             InitializeComponent();
@@ -23,9 +23,10 @@ namespace Task2
                 File.CreateText(logfile).Close();
             }
             timer.Tick += Timer_Tick;
-            timer.Interval = new TimeSpan(0,0,1);
+            timer.Interval = new TimeSpan(0, 0, 1);
             timer.Start();
-            
+            controller = new ServiceController();
+            controller.ServiceName = "=MyService=";
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -33,41 +34,60 @@ namespace Task2
             textBox.Text = File.ReadAllText(logfile);
             Scrlwvr.ScrollToEnd();
         }
-               
+
 
         private void InstallBtn_Click(object sender, RoutedEventArgs e)
         {
-
-            ManagedInstallerClass.InstallHelper(new string[] { servicePath });
-            MessageBox.Show("Служба установлена");
+            try
+            {
+                ManagedInstallerClass.InstallHelper(new string[] { servicePath });
+                MessageBox.Show("Служба установлена");
+            }
+            catch (Exception exp)
+            {
+                MessageBox.Show(exp.Message);
+            }
 
         }
 
         private void StartServiceBtn_Click(object sender, RoutedEventArgs e)
         {
-            controller = new ServiceController
+            try
+            {                
+                controller.Start();
+                MessageBox.Show("Служба запущена");
+            }
+            catch (Exception exp)
             {
-                ServiceName = "=MyService="
-            };
-            controller.Start();
-            MessageBox.Show("Служба запущена");
+                MessageBox.Show(exp.Message);
+            }
         }
 
         private void StopServiceBtn_Click(object sender, RoutedEventArgs e)
         {
-            controller = new ServiceController
+            try
+            {                
+                controller.Stop();
+                MessageBox.Show("Служба остановлена");
+            }
+            catch (Exception exp)
             {
-                ServiceName = "=MyService="
-            };
-            controller.Stop();
-            MessageBox.Show("Служба остановлена");
+                MessageBox.Show(exp.Message);
+            }
         }
 
         private void UninstallBtn_Click(object sender, RoutedEventArgs e)
         {
-            ManagedInstallerClass.InstallHelper(new string[] { @"/u",servicePath});
-            MessageBox.Show("Служба удалена");
-            
+            try
+            {
+                ManagedInstallerClass.InstallHelper(new string[] { @"/u", servicePath });
+                MessageBox.Show("Служба удалена");
+            }
+            catch (Exception exp)
+            {
+                MessageBox.Show(exp.Message);
+            }
+
         }
 
         public void Dispose()
