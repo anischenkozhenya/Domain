@@ -2,6 +2,7 @@
 using System.Configuration.Install;
 using System.IO;
 using System.ServiceProcess;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Threading;
 namespace Task2
@@ -38,56 +39,80 @@ namespace Task2
 
         private void InstallBtn_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                ManagedInstallerClass.InstallHelper(new string[] { servicePath });
-                MessageBox.Show("Служба установлена");
-            }
-            catch (Exception exp)
-            {
-                MessageBox.Show(exp.Message);
-            }
-
+            Task task= InstallBtnAsync();
         }
+
+        private async Task InstallBtnAsync()
+        {
+            await Task.Run(()=> {
+                try
+                {
+                    ManagedInstallerClass.InstallHelper(new string[] { servicePath });
+                    MessageBox.Show("Служба установлена");
+                }
+                catch (Exception exp)
+                {
+                    MessageBox.Show(exp.Message);
+                }
+            });
+        }
+
 
         private void StartServiceBtn_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {                
-                controller.Start();
-                MessageBox.Show("Служба запущена");
-            }
-            catch (Exception exp)
-            {
-                MessageBox.Show(exp.Message);
-            }
+            Task task = StartServiceBtnAsync();
+        }
+        private async Task StartServiceBtnAsync()
+        {
+            await Task.Run(() => {
+                try
+                {
+                    controller.Start();
+                    MessageBox.Show("Служба запущена");
+                }
+                catch (Exception exp)
+                {
+                    MessageBox.Show(exp.Message);
+                }
+            });
+        }
+        private void UninstallBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Task task = UninstallBtnAsync();
+        }
+        private async Task UninstallBtnAsync()
+        {
+            await Task.Run(() => {
+                try
+                {
+                    ManagedInstallerClass.InstallHelper(new string[] { @"/u", servicePath });
+                    MessageBox.Show("Служба удалена");
+                }
+                catch (Exception exp)
+                {
+                    MessageBox.Show(exp.Message);
+                }
+            });
         }
 
         private void StopServiceBtn_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {                
-                controller.Stop();
-                MessageBox.Show("Служба остановлена");
-            }
-            catch (Exception exp)
-            {
-                MessageBox.Show(exp.Message);
-            }
+            Task task = StopServiceBtnAsync();
         }
 
-        private void UninstallBtn_Click(object sender, RoutedEventArgs e)
+        private async Task StopServiceBtnAsync()
         {
-            try
-            {
-                ManagedInstallerClass.InstallHelper(new string[] { @"/u", servicePath });
-                MessageBox.Show("Служба удалена");
-            }
-            catch (Exception exp)
-            {
-                MessageBox.Show(exp.Message);
-            }
-
+            await Task.Run(() => {
+                try
+                {
+                    controller.Stop();
+                    MessageBox.Show("Служба остановлена");
+                }
+                catch (Exception exp)
+                {
+                    MessageBox.Show(exp.Message);
+                }
+            });
         }
 
         public void Dispose()

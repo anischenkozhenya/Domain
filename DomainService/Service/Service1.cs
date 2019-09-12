@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.ServiceProcess;
 using System.Text;
@@ -16,8 +15,7 @@ namespace Service
         DateTime dateTime;
         static private FileSystemWatcher[] fileSystemWatcher;
         readonly string path = @"D:\";
-        readonly string fileName = "Log.txt";
-        private string userName;
+        readonly string fileName = "Log.txt";       
         public Service1()
         {
             InitializeComponent();
@@ -41,13 +39,11 @@ namespace Service
 
         private void FileSystemWatcher_Deleted(object sender, FileSystemEventArgs e)
         {
-            string filepath = path + fileName;
-            userName = null;
-            userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+            string filepath = path + fileName;            
             StringBuilder stringBuilder = new StringBuilder();
             dateTime = DateTime.UtcNow;
             stringBuilder.Append(dateTime.ToString());
-            stringBuilder.Append(" "+ userName + " "+e.FullPath + " был удален!\n");
+            stringBuilder.Append(" "+e.FullPath + " был удален!\n");
             File.AppendAllText(filepath,stringBuilder.ToString());
         }
 
