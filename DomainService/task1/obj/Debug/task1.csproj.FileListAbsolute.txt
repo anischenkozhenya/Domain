@@ -8,3 +8,13 @@ C:\Users\Anischenko\Source\Repos\Domain\DomainService\task1\obj\Debug\task1.cspr
 C:\Users\Anischenko\Source\Repos\Domain\DomainService\task1\obj\Debug\task1.csproj.CoreCompileInputs.cache
 C:\Users\Anischenko\Source\Repos\Domain\DomainService\task1\obj\Debug\task1.exe
 C:\Users\Anischenko\Source\Repos\Domain\DomainService\task1\obj\Debug\task1.pdb
+E:\Domain\Domain\DomainService\task1\bin\Debug\task1.exe.config
+E:\Domain\Domain\DomainService\task1\bin\Debug\task1.exe
+E:\Domain\Domain\DomainService\task1\bin\Debug\task1.pdb
+E:\Domain\Domain\DomainService\task1\obj\Debug\task1.csprojAssemblyReference.cache
+E:\Domain\Domain\DomainService\task1\obj\Debug\task1.Form1.resources
+E:\Domain\Domain\DomainService\task1\obj\Debug\task1.Properties.Resources.resources
+E:\Domain\Domain\DomainService\task1\obj\Debug\task1.csproj.GenerateResource.cache
+E:\Domain\Domain\DomainService\task1\obj\Debug\task1.csproj.CoreCompileInputs.cache
+E:\Domain\Domain\DomainService\task1\obj\Debug\task1.exe
+E:\Domain\Domain\DomainService\task1\obj\Debug\task1.pdb
